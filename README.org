@@ -1,5 +1,5 @@
 * Dockerfile - Blender using CUDA
-Uses CUDA
+Uses Blender 2.78 with CUDA for batch rendering
 run.sh script mounts /var/tmp/blender as a shared volume
 run as i.e.: ./run.sh /mount/blender/YourFile.blend -o /mount/blender/imageFrame_### -f 1
 or whatever blender options you need.
