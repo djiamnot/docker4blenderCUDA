@@ -2,8 +2,9 @@
 
 import bpy
 
-bpy.context.user_preferences.addons['cycles'].preferences.compute_device_type = 'CUDA'
-bpy.context.user_preferences.addons['cycles'].compute_device = 'CUDA_0'
+prefs = bpy.context.user_preferences.addons['cycles'].preferences
+prefs.compute_device_type = 'CUDA'
+# bpy.context.user_preferences.addons['cycles'].compute_device = 'CUDA_0'
 bpy.context.scene.cycles.device = 'GPU'
 
 bpy.context.scene.render.tile_x = 256
